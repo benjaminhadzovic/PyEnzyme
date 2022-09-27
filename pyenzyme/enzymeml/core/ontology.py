@@ -64,6 +64,7 @@ class DataTypes(str, Enum):
     BIOMASS = "biomass"
     CONVERSION = "conversion"
     PEAK_AREA = "peak-area"
+    CONSUMPTION_RATE = "consumption-rate"
 
 
 class EnzymeMLPart(str, Enum):

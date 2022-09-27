@@ -4,6 +4,7 @@
 # License: BSD-2 clause
 # Copyright (c) 2022 Institute of Biochemistry and Technical Biochemistry Stuttgart
 
+from pydoc import splitdoc
 import numpy as np
 import pandas as pd
 import re
@@ -168,6 +169,7 @@ def read_template(path: str, enzmldoc):
                 "Conversion [%]": DataTypes.CONVERSION,
                 "Peak Area": DataTypes.PEAK_AREA,
                 "Total concentration after addition": DataTypes.CONCENTRATION,
+                "Consumption rate": DataTypes.CONSUMPTION_RATE
             }
 
             if reactant_id not in measurement.species_dict["reactants"]:
